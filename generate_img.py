@@ -30,7 +30,7 @@ while True:
         break
     elif k % 256 == ord('s'):
         # 's' key to save the frame
-        img_name = os.path.join(output_dir, "opencv_frame_{}.png".format(img_counter))
+        img_name = os.path.join(output_dir, "opencv_frame_{}.jpg".format(img_counter))
         cv2.imwrite(img_name, frame)
         print("{} written!".format(img_name))
         img_counter += 1
